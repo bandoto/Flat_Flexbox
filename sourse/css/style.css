@@ -473,11 +473,15 @@ body, input, button, textarea {
 }
 .footer__side {
   display: flex;
+  order: 1;
 }
 @media (max-width: 500px) {
   .footer__side {
     display: block;
   }
+}
+.footer__side_right {
+  order: 2;
 }
 .footer__column {
   padding-right: 70px;

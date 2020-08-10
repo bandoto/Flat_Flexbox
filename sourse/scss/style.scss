@@ -424,11 +424,15 @@ body.lock{
 			display: block;
 		}
 	}
-	// .footer__left-side
+	// .footer__side
 	&__side {
 		display: flex;
+		order: 1;
 		@media (max-width: 500px){
 			display: block;
+		}
+		&_right{
+			order: 2;
 		}
 	}
 	// .footer__column
