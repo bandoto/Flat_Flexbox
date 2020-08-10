@@ -414,7 +414,7 @@ body, input, button, textarea {
   display: flex;
   margin: 0px -15px;
 }
-@media (max-width: 767px) {
+@media (max-width: 992px) {
   .posts__row {
     display: block;
     text-align: center;
@@ -438,6 +438,10 @@ body, input, button, textarea {
 }
 .posts__icon {
   margin: 24px 0px 0px 0px;
+}
+.posts__icon img {
+  max-width: 300px;
+  height: auto;
 }
 .posts__title {
   color: #16a085;
