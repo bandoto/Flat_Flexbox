@@ -98,15 +98,16 @@
 }
 
 .news {
-  padding: 0 0 50px 0;
+  padding: 80px 0;
+  /*BLOGPOST===========================================================================================*/
 }
 
 .news__content {
   text-align: center;
+  margin: 0 0 80px 0;
 }
 
 .news__title {
-  margin: 80px 0 0 0;
   color: #16a085;
   font-size: 40px;
   font-weight: 300;
@@ -127,7 +128,7 @@
 }
 
 .news__text {
-  margin: 0 0 51px 0;
+  margin: 0 0 31px 0;
   color: #7f8c8d;
   font-size: 16px;
   font-weight: 400;
@@ -150,6 +151,41 @@
   background-color: #16a085;
   color: #fff;
 }
+
+.news__body {
+  padding: 0 0 71px 0;
+}
+
+.news__img {
+  padding: 0 0 50px 0;
+}
+
+.news__img p {
+  color: #7f8c8d;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  font-style: italic;
+}
+
+.news__img img {
+  width: 100%;
+  max-height: 388px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.news__footer img {
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/*===========================================================================================*/
+
+/*===========================================================================================*/
+
+/*===========================================================================================*/
 
 .about__top {
   padding: 80px 0;
@@ -180,7 +216,7 @@
 
 .about__img img {
   width: 100%;
-  height: 158px;
+  max-height: 158px;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -213,6 +249,88 @@
 
 .about__item {
   padding: 40px 0;
+}
+
+.contact {
+  padding: 80px 0 50px 0;
+}
+
+.contact__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 -17px;
+}
+
+.contact__text {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+  padding: 0 17px 17px 0;
+}
+
+.contact__title {
+  color: #16a085;
+  font-size: 40px;
+  font-weight: 300;
+  line-height: 32px;
+  text-transform: uppercase;
+  margin: 0 0 31px 0;
+}
+
+.contact__info {
+  color: #7f8c8d;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.contact__subtitle {
+  margin: 0 0 35px 0;
+}
+
+.contact__loc {
+  margin: 35px 0 0 0;
+}
+
+.contact__form {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+  padding: 0 17px;
+}
+
+.contact__form input,
+.contact__form textarea {
+  color: #7f8c8d;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  width: 100%;
+  height: 40px;
+  margin: 0 0 10px 0;
+  padding: 0 0 0 11px;
+  border: 1px solid rgba(22, 160, 133, 0.5);
+  background-color: #ecf0f1;
+}
+
+.contact__form input[type=submit] {
+  color: #16a085;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 24px;
+  text-transform: uppercase;
+  border: 1px solid #16a085;
+  background-color: #ffffff;
+  opacity: 0.6;
+  max-width: 115px;
+  height: 35px;
+  padding: 0;
+}
+
+.contact__form textarea {
+  height: 200px;
+  padding: 7px 0 0 11px;
 }
 
 /*Обнуление*/
@@ -515,6 +633,10 @@ textarea {
   text-transform: uppercase;
 }
 
+.mainblock__footer {
+  margin: 40px 0 0 0;
+}
+
 .mainblock__btn {
   font-family: Lato;
   color: #ffffff;
@@ -784,12 +906,60 @@ textarea {
 }
 
 @media (max-width: 767px) {
+  .service__top {
+    padding: 30px 0 20px 0;
+  }
+
   .service__row {
     display: block;
   }
 
   .service__item {
     padding: 15px 0;
+  }
+
+  .news {
+    padding: 30px 0;
+  }
+
+  .news__content {
+    margin: 0 0 50px 0;
+  }
+
+  .news__body {
+    padding: 0 0 41px 0;
+  }
+
+  .about__top {
+    padding: 30px 0;
+  }
+
+  .about__title_column {
+    margin-bottom: 20px;
+  }
+
+  .about__row {
+    display: block;
+  }
+
+  .about__item {
+    padding: 15px 0;
+  }
+
+  .contact {
+    padding: 40px 0 20px 0;
+  }
+
+  .contact__title {
+    margin: 0 0 12px 0;
+  }
+
+  .contact__subtitle {
+    margin: 0 0 12px 0;
+  }
+
+  .contact__loc {
+    margin: 12px 0 0 0;
   }
 
   body.lock {
@@ -940,7 +1110,18 @@ textarea {
   }
 }
 
+@media (max-width: 550px) {
+  .contact__row {
+    display: block;
+    text-align: center;
+  }
+}
+
 @media (max-width: 500px) {
+  .news__body {
+    padding: 0 0 21px 0;
+  }
+
   .footer__row {
     display: block;
   }
